@@ -1,0 +1,76 @@
+body{
+    background-color: #715947;
+    overflow: hidden;
+}
+.container {
+    display: flex; gap: 50px; 
+    align-items: center; 
+    justify-content: center;
+    margin: 50px 0;
+}
+.nav-vert {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 8px 0;
+    width: 200px;
+    background-color: #2D6469;
+}
+li a.item-vert{
+    text-decoration: none;
+    display: block;
+    color: #3CABB5;
+    padding: 8px 16px;
+}
+li a.item-vert:hover {
+    background-color: #77B0B5;
+    color: white;
+}
+div{
+    margin: 10px ;
+}
+
+li a.active{
+    background-color: #77B0B5;
+    color: white;
+}
+
+/* Para não haver um hover no item selecionado */
+li a:hover:not(.active){
+    background-color: #77B0B5;
+    color: white;
+}
+
+
+ul.ul-border{
+    border: 1px solid #000;
+}
+.ul-border li a{
+    border-bottom: 1px solid #000;
+    text-align: center;
+}
+
+ul.overflow {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    overflow: auto; 
+}
+div.content {
+    background-color: #fff;
+    margin-left:25%;
+    padding:1px 16px;
+    height:1000px;
+ 
+}
+.onload {
+    display: flex;
+    justify-content: center;
+}
+iframe {
+    width: 700px;
+    height: 300px;
+    border: none;
+}
